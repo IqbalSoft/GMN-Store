@@ -1,0 +1,407 @@
+body {
+	margin: 0;
+}
+/* dekstop version */
+@media (min-width: 992px) {
+	.navbar-brand,
+	.nav-link {
+		color: white !important;
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.7);
+	}
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 20px;
+		font-size: 14px;
+	}
+	.nav-link:hover::after {
+		content: "";
+		display: block;
+		border-bottom: 3px solid #0069d9;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+	.jumbotron {
+		margin-top: -74px;
+		height: 630px;
+	}
+	.jumbotron .display-4 {
+		font-size: 62px;
+		margin-top: 150px;
+	}
+	/* invert trust section on dekstop */
+	#img-trust {
+		margin-right: -130%;
+	}
+	#caption-trust {
+		margin-left: -58%;
+	}
+	.body-product {
+		background-image: url("../img/kayu.jpg");
+		background-size: cover;
+		height: 150vh;
+		margin-top: -74px;
+		background-attachment: fixed;
+		position: relative;
+	}
+	.body-product::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 95%;
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 0)
+		);
+		position: absolute;
+		bottom: 0;
+	}
+	.body-about {
+		background-image: url("../img/kayu.jpg");
+		background-size: cover;
+		width: 100%;
+		height: 100vh;
+		margin-top: -74px;
+		background-attachment: fixed;
+		position: relative;
+	}
+	.body-about::after {
+		content: "";
+		display: block;
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 0)
+		);
+		position: absolute;
+		width: 100%;
+		height: 35%;
+		bottom: 0;
+	}
+	.body-contact {
+		background-image: url("../img/kayu.jpg");
+		background-size: cover;
+		width: 100%;
+		height: 100vh;
+		margin-top: -74px;
+		background-attachment: fixed;
+		position: relative;
+	}
+	.body-contact::after {
+		content: "";
+		display: block;
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 0)
+		);
+		position: absolute;
+		width: 100%;
+		height: 70%;
+		bottom: 0;
+	}
+	.body-invoice {
+		height: 110vh;
+	}
+	.bd-detailP {
+		height: 135vh;
+	}
+	.title-nav-box {
+		margin-top: 35px;
+	}
+	.img-produk {
+		border: 1px solid lightgray;
+		width: 105%;
+		height: 98%;
+	}
+	.card-product {
+		height: 52vh !important;
+	}
+	#content-product {
+		padding-top: 90px;
+	}
+	#content-about {
+		z-index: 1;
+		padding-top: 150px;
+		color: #ffffff;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+		font-family: "Slabo 27px", serif;
+		font-size: 18px;
+	}
+	#content-contact {
+		padding-top: 100px;
+	}
+	#form-contact {
+		z-index: 1;
+	}
+	#form-login {
+		margin-top: 50px;
+		margin-left: 50px;
+	}
+	#nav-box-product {
+		height: 130px;
+	}
+
+	/* chart */
+	.statistics-bar {
+		width: 100% !important;
+		height: 500px !important;
+	}
+}
+
+/* tablet version */
+@media only screen and (max-width: 768px) {
+	.body-contact,
+	.body-about,
+	.body-auth,
+	.body-product {
+		background-image: url("../img/bgm-kayu.png");
+		background-size: cover;
+		background-attachment: fixed !important;
+		height: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.b-cont {
+		height: 100vh;
+	}
+	.b-about {
+		color: white;
+		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+		height: 100vh;
+	}
+	.auth-login {
+		height: 100vh;
+	}
+	.auth-register {
+		height: 100vh;
+	}
+	.img-profile {
+		width: 90%;
+		height: 45% !important;
+	}
+	.c-btn {
+		margin-top: 5px;
+	}
+	#form-login {
+		z-index: 1;
+	}
+}
+
+/* mobile version */
+@media only screen and (max-width: 414px) {
+	.c-btn {
+		margin-top: 5px;
+		display: inline-flexbox;
+	}
+	.body-contact,
+	.body-about,
+	.body-auth,
+	.body-product {
+		background-image: url("../img/bgm-kayu.png");
+		background-size: cover;
+		background-attachment: fixed !important;
+		height: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.b-cont {
+		height: 100vh;
+	}
+	.b-about {
+		color: white;
+		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+		height: 100vh;
+	}
+	.auth-login {
+		height: 100vh;
+	}
+	.img-profile {
+		display: block;
+		margin: auto;
+		height: 90% !important;
+	}
+}
+@media only screen and (max-width: 411px) {
+	.c-btn {
+		margin-top: 5px;
+		display: inline-flexbox;
+	}
+	.body-contact,
+	.body-about,
+	.body-auth,
+	.body-product {
+		background-image: url("../img/bgm-kayu.png");
+		background-size: cover;
+		background-attachment: fixed !important;
+		height: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.b-cont {
+		height: 100vh;
+	}
+	.b-about {
+		color: white;
+		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+		height: 100vh;
+	}
+	.auth-login {
+		height: 100vh;
+	}
+}
+@media only screen and (max-width: 384px) {
+	.c-btn {
+		margin-top: 5px;
+		display: inline-flexbox;
+	}
+	.body-contact,
+	.body-about,
+	.body-auth,
+	.body-product {
+		background-image: url("../img/bgm-kayu.png");
+		background-size: cover;
+		background-attachment: fixed !important;
+		height: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.b-about {
+		color: white;
+		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+	}
+	.auth-login {
+		height: 100vh;
+	}
+	.auth-register {
+		height: 135vh;
+	}
+	.img-profile {
+		display: block;
+		margin: auto;
+		height: 90% !important;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.c-btn {
+		margin-top: 5px;
+		display: inline-flexbox;
+	}
+	.body-contact,
+	.body-about,
+	.body-auth,
+	.body-product {
+		background-image: url("../img/bgm-kayu.png");
+		background-size: cover;
+		background-attachment: fixed !important;
+		height: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.b-about {
+		color: white;
+		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+	}
+	.auth-login {
+		height: 100vh;
+	}
+	.auth-register {
+		height: 135vh;
+	}
+	.img-profile {
+		display: block;
+		margin: auto;
+		height: 90% !important;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.c-btn {
+		margin-top: 5px;
+		display: inline-flexbox;
+	}
+	.body-contact,
+	.body-about,
+	.body-auth,
+	.body-product {
+		background-image: url("../img/bgm-kayu.png");
+		background-size: cover;
+		background-attachment: fixed !important;
+		height: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.b-cont {
+		height: 100vh !important;
+	}
+	.b-about {
+		color: white;
+		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+		height: 105vh !important;
+	}
+	.auth-login {
+		height: 100vh;
+	}
+	.auth-register {
+		height: 148vh;
+	}
+	.title-detail {
+		font-weight: 300;
+		font-size: 22px;
+	}
+	.card img {
+		height: 130px;
+	}
+	.img-profile {
+		display: block;
+		margin: auto;
+		height: 90% !important;
+	}
+	.img-detail {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.c-btn {
+		margin-top: 5px;
+		display: inline-flexbox;
+	}
+	.card-product {
+		height: 80vh;
+	}
+	.body-contact,
+	.body-about,
+	.body-auth,
+	.body-product {
+		background-image: url("../img/bgm-kayu.png");
+		background-size: cover;
+		background-attachment: fixed !important;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.b-cont {
+		height: 120vh !important;
+	}
+	.b-about {
+		color: white;
+		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+		height: 140vh !important;
+	}
+	.auth-login {
+		height: 105vh;
+	}
+	.auth-register {
+		height: 210vh;
+	}
+	.img-profile {
+		display: block;
+		margin: auto;
+		height: 90% !important;
+	}
+	.province_name {
+		font-size: 13px;
+	}
+}

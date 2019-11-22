@@ -1,0 +1,27 @@
+.parallax1,
+.parallax2 {
+	opacity: 0;
+	transform: translate(0, 200px);
+}
+
+.parallax2 {
+	transform: translate(0, 250px);
+}
+
+.parallax1.show,
+.parallax2.show {
+	opacity: 1;
+	transform: translate(0, 0);
+	transition: 1.7s;
+}
+
+#content .box {
+	opacity: 0;
+	transition: 0.5s;
+	transform: translate(0, -40px);
+}
+
+#content .box.show {
+	opacity: 1;
+	transform: translate(0, 0);
+}
